@@ -2,7 +2,8 @@
 
 public partial class MainPage : ContentPage
 {
-    string _fileName = Path.Combine(FileSystem.AppDataDirectory, "notes.txt");
+    private readonly string _fileName = Path.Combine(FileSystem.AppDataDirectory, "notes.txt");
+    public const double MyFontSize = 28;
 
     public MainPage()
     {
@@ -28,4 +29,3 @@ public partial class MainPage : ContentPage
         editor.Text = string.Empty;
     }
 }
-
